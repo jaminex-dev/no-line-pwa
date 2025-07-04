@@ -1,0 +1,38 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+  margin: 0;
+  background: #f4f4f4;
+}
+header {
+  background: #007BFF;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+#indicador-sincronizacion {
+  margin-top: 0.5rem;
+  text-align: end;
+}
+main {
+  margin: 1rem auto;
+  max-width: 500px;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+input, button {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  background: #eee;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+}

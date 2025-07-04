@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="assets/styles.css" />
+  <title>No-Line</title>
+</head>
+<body>
+  <header>
+    <h1>No-Line</h1>
+    <div id="indicador-sincronizacion">🟢 En linea</div>
+  </header>
+
+  <main>
+    <section>
+      <label for="producto">Producto:</label>
+      <input type="text" id="producto" />
+      <label for="peso">Peso (kg):</label>
+      <input type="number" id="peso" />
+      <button id="guardar">Guardar</button>
+    </section>
+
+    <section>
+      <h2>Registros</h2>
+      <ul id="lista-registros"></ul>
+    </section>
+  </main>
+
+  <script src="src/db.js"></script>
+  <script src="src/sync-indicator.js"></script>
+  <script src="src/app.js"></script>
+  <script>
+    // Registro del Service Worker con scope relativo
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js', { scope: './' })
+          .then(reg => console.log('SW registrado con scope:', reg.scope))
+          .catch(err => console.error('Error al registrar SW:', err));
+      });
+    }
+  </script>
+</body>
+</html>

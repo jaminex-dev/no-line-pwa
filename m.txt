@@ -1,0 +1,25 @@
+npm install -g http-server
+
+http-server . -p 5500 --spa
+
+ultima conversacion :
+
+. ¿Se puede usar la PWA sin internet externo?
+¡Sí!
+
+Solo necesitas que todos los dispositivos estén conectados a la misma red local (ya sea por WiFi, hotspot, o cable).
+No necesitas internet externo.
+La PWA funcionará y sincronizará con CouchDB localmente.
+4. ¿Cómo hacer más fácil el acceso?
+Puedes crear un acceso directo en los móviles con la URL local (por ejemplo, http://10.1.1.134:5500/).
+Si usas siempre el mismo hotspot, la IP será la misma.
+Si cambias de red, la IP puede cambiar, así que revisa con ipconfig si no carga.
+5. ¿Quieres que el servidor se inicie automáticamente?
+Si quieres, puedo guiarte para crear un script que inicie el servidor automáticamente al prender tu PC.
+
+Resumen:
+
+No necesitas internet externo, solo red local.
+El comando del servidor debes ejecutarlo cada vez que quieras servir la app.
+Puedes automatizar el inicio si lo deseas.
+¿Te gustaría automatizar el inicio del servidor o necesitas ayuda para crear un acceso directo en los móviles?
