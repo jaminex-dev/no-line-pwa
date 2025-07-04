@@ -23,3 +23,5 @@ No necesitas internet externo, solo red local.
 El comando del servidor debes ejecutarlo cada vez que quieras servir la app.
 Puedes automatizar el inicio si lo deseas.
 ¿Te gustaría automatizar el inicio del servidor o necesitas ayuda para crear un acceso directo en los móviles?
+
+https://www.youtube.com/watch?v=DAYT5Tlb9GI
